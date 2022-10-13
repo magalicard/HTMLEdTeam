@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML clase 6: Tablas</title>
+    <style>
+        table{
+           border-collapse: collapse;
+        }
+        td, th{
+           border: 1px solid #000;
+           padding: .5em;
+        }
+
+        th{
+            background: #333;
+            color:#fff;
+        }
+    </style>
+</head>
+<body>
+    <!-- Se pueden complicar pero este ejemplo es el mas basico solo con filas o columnas -->
+    <!-- <table></table> Para marcar la tabla 
+    <tr></tr> Table row para fila
+    tecnicamente no hay columnas solo una interseccion en una celda 
+    y se in dica por cada unade las tr. Ahi se pone una table data td
+    
+    Atributos para agrupacion d filas y columnas
+
+    colspan=N Columnas
+    rowspan=N Filas
+
+    Organizar columnas:
+    se utiliza la etiqueta colgroup
+    y dentro se pone <col></col> por la cantidad de
+    columnas que hayan. Esto sirve para darles un orden y en caso 
+    de que se siga con CSS para señalar cual es cual.
+
+
+
+    -->
+    <table>
+        <!-- Estas no se ven si no tienen contenido -->
+        <caption>Horario semanal de clases</caption> <!-- Es para indicar el titulo de una tabla o de q trata -->
+         <colgroup>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+                
+        </colgroup>
+        <thead> <!--Tiene que ir fuera de cada th, encierra el encabezado -->
+            <th>Lunes</th> <!--th para encabezados -->
+            <th>Martes</th>
+            <th>Miercoles</th>
+            <th>Jueves</th>
+            <th>Viernes</th>
+        </thead>
+             
+        <tbody> <!--Para encerrar el cuerpo -->
+
+            <tr>
+                <td colspan=2>HTML</td>
+                <td rowspan=2>Python</td>
+                <td>CSS</td>
+                <td>JS</td>
+            </tr>
+            <tr>
+                <td>Algoritmos</td>
+                <td>Marketing</td>
+                <td >Diseño</td>
+                <td>Java</td>
+                
+            </tr>
+        </tbody>
+         <tfoot> <!--Es para poner una conclusion o un pie  -->
+            <tr>
+                <td>2 cursos</td>
+                <td>2 cursos</td>
+                <td>2 cursos</td>
+                <td>2 cursos</td>
+                <td>2 cursos</td>
+
+            </tr>
+        </tfoot>
+            <!-- Estas no se van a ver divididas asi con lineas
+                porque se personaliza con CSS por eso en el head agregue parte de un codigo de CSS -->
+                
+            </table>
+    
+</body>
+
+</html>

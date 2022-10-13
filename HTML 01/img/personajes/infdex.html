@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf8">
+
+</head>
+<body>
+    <h1>HOLII</h1>
+    
+    <!-- Enlaces 
+    se crean con la etiqueta a (anchor, ancla)
+y necesitan el atributo obligatorio href -->
+<a href="https://ar.pinterest.com/">Ir a pinterest</a> <!--Es necesario que un link tenga protocolo. O sea http-->
+
+<!-- Atributos opcionales:
+     target="_blank" pestaña nueva
+     rel="nofollow" (no transmite ceo)
+     rel="no reference" (no indica al destino 
+     el origen del link)
+     rel="noopener"(evita la incrustacion de codigo 
+     malicioso al abrir enlaces en nuevas pestañas)
+     download (descarga el recurso en lugar de abrirlo
+     en el navegador)
+-->
+<p>
+    <a href="https://ar.pinterest.com/"
+    target="_blank"> Ir a pinterest 
+    en pestaña nueva</a>
+
+    <!-- Esta funcion es para que el enlace se abra en una pagina nueva
+        En el caso de que lo envies a tu misma pagina web
+        no conviene usarlo -->
+    </p>
+
+<p>
+    <a href="butterfly.png">Ver imagen png de mariposa</a>
+    <br>
+    <a href="butterfly.png"download>Descargar imagen</a>
+    <!-- Para que download funcionne debe estar en 
+        la misma pagina -->
+</p>
+
+<!-- Rutas relativas y absolutaas
+1.Rutas absolutas
+.tienen protocolo (http https) y son unicas.
+.Se usan para rutas externas. O sea enlaces que esten fuera del proyecto
+2. Rutas relativas
+. Se usan para rutas internas del proyecto.
+. No usan protocolo y se debe navegar hacia el destino
+ . Si el recurso esta en la misma carpeta se escribe su nombre y extension. (butterfly.jpg)
+ . Si el recurso está en una carpeta por encima.
+    ../butterfly.png
+ . Si el recurso esta una carpeta por debajo
+    img/butterfly.png   
+3. Rutas relativas a la raiz. Es la forma que mas vamos a usar.
+  . Se construyen a partir de la carpeta raiz del proyecto.
+  . Empiezan siempre con /  
+Son mejores ya que muestran bien como esta compuesto el proyecto y el orden de las carpetas.  
+
+-->
+<p>
+    <!-- Para que  un archivo de otra carpeta se vea hay que escribirlos de esta forma -->
+    <a href="img/personajes/butterfly.png"></a>
+</p>
+<p><a href="/HTML/imagenes.html">Ir a imagenes</a></p>
+
+<p> <a href="/html">Ir a marcadores</a></p>
+
+<p><a href="/HTML/listas.html">Ir a las listas</a></p>
+</body>
+</html>
